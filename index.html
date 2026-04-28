@@ -3,343 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Beräkna nettolön och skatt som frilansare i Sverige 2026. Gratis kalkylator med kommunalskatt, egenavgifter och bolån. Uppdaterad 2026-04-27.">
-<meta name="keywords" content="skattekalkylator frilansare sverige 2026, eget foretag skatt berakning, nettolön kalkylator, kommunalskatt berakning, egenavgifter frilansare, bolan manadsbetalning sverige">
+<meta name="description" content="Beräkna nettolön och skatt som frilansare eller egenföretagare i Sverige 2026.">
+<meta name="keywords" content="skatt kalkylator frilansare, eget företag skatt 2026, nettolön beräkning sverige">
 <meta property="og:title" content="Skattekalkylator Frilansare Sverige 2026">
+<meta property="og:description" content="Beräkna nettolön och skatt som frilansare eller egenföretagare i Sverige 2026.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://legion33shadow.github.io/tax-calculator-se/">
-<title>Skattekalkylator Frilansare Sverige 2026 — Nettolön & Egenavgifter</title>
+<title>Skattekalkylator Frilansare Sverige 2026</title>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5382997898313669" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Skattekalkylator Frilansare Sverige 2026", "url": "https://legion33shadow.github.io/tax-calculator-se/", "description": "Beräkna nettolön och skatt som frilansare eller egenföretagare i Sverige 2026", "applicationCategory": "FinanceApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SEK"}, "inLanguage": "sv", "dateModified": "2026-04-27"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hur mycket skatt betalar jag som frilansare 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Som frilansare betalar du kommunalskatt (ca 30–35%) plus egenavgifter (ca 28,26%). Totalt effektivt skatteuttag är 40–50% av bruttoomsättningen."}}, {"@type": "Question", "name": "Vad är F-skatt och hur ansöker man?", "acceptedAnswer": {"@type": "Answer", "text": "F-skatt innebär att du sköter din egna skattebetalning. Du ansöker via Skatteverket. Med F-skatt behöver uppdragsgivaren inte dra skatt åt dig."}}, {"@type": "Question", "name": "Ska jag ha enskild firma eller aktiebolag?", "acceptedAnswer": {"@type": "Answer", "text": "Under ca kr 500.000–600.000/år är enskild firma enklast. Tjänar du mer kan AB ge skattefördelar via lägre bolagsskatt (20,6%)."}}, {"@type": "Question", "name": "Måste jag betala moms som frilansare?", "acceptedAnswer": {"@type": "Answer", "text": "Om omsättningen överstiger kr 30.000/år ska du registrera dig för moms (25% standardsats)."}}]}</script>
 <style>
 :root{--p:#2563eb;--d:#1e40af;--bg:#f8fafc;--card:#fff;--t:#1e293b;--s:#64748b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);
-     color:var(--t);line-height:1.7}
-header{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;
-       padding:2rem 1rem;text-align:center}
-header h1{font-size:1.6rem;font-weight:800;margin-bottom:.4rem}
-header p{opacity:.9;font-size:.95rem;max-width:600px;margin:0 auto}
-nav.crumb{background:#fff;padding:.5rem 1rem;font-size:.8rem;color:var(--s);
-           border-bottom:1px solid #e2e8f0}
-nav.crumb a{color:var(--p);text-decoration:none}
-.container{max-width:780px;margin:0 auto;padding:1rem}
-.card{background:var(--card);border-radius:14px;padding:1.6rem;
-      box-shadow:0 2px 16px rgba(0,0,0,.07);margin-bottom:1.5rem}
-.card h2{color:var(--p);font-size:1.15rem;font-weight:700;
-         margin-bottom:1rem;border-bottom:2px solid #bfdbfe;padding-bottom:.5rem}
-.card h3{color:var(--d);font-size:1rem;font-weight:600;margin:1rem 0 .4rem}
-.card p{color:#475569;font-size:.92rem;margin-bottom:.7rem}
-.card ul{padding-left:1.2rem;color:#475569;font-size:.92rem}
-.card ul li{margin-bottom:.4rem}
-label{display:block;font-size:.83rem;color:var(--s);margin:.8rem 0 .3rem;
-      font-weight:500}
-input,select{width:100%;padding:.75rem;border:1.5px solid #e2e8f0;
-             border-radius:9px;font-size:.97rem;transition:border .2s;background:#fff}
-input:focus,select:focus{outline:none;border-color:var(--p);
-                         box-shadow:0 0 0 3px #dbeafe}
-input[readonly]{background:#f1f5f9;color:var(--s)}
-button{width:100%;padding:.85rem;background:var(--p);color:#fff;border:none;
-       border-radius:9px;font-size:1rem;font-weight:700;cursor:pointer;
-       margin-top:1rem;transition:all .2s}
-button:hover{background:var(--d);transform:translateY(-1px);
-             box-shadow:0 4px 12px rgba(37,99,235,.3)}
-.result{background:#eff6ff;border-left:4px solid var(--p);
-        border-radius:0 10px 10px 0;padding:1.1rem;margin-top:1rem;display:none}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--t)}
+header{background:var(--p);color:#fff;padding:1.2rem 1rem;text-align:center}
+header h1{font-size:1.5rem;font-weight:700}
+header p{opacity:.85;font-size:.9rem;margin-top:.3rem}
+.container{max-width:720px;margin:2rem auto;padding:0 1rem}
+.card{background:var(--card);border-radius:12px;padding:1.5rem;
+      box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:1.5rem}
+.card h2{color:var(--p);font-size:1.2rem;margin-bottom:1rem;border-bottom:2px solid var(--p);padding-bottom:.5rem}
+label{display:block;font-size:.85rem;color:var(--s);margin:.8rem 0 .3rem}
+input,select{width:100%;padding:.7rem;border:1.5px solid #e2e8f0;border-radius:8px;
+             font-size:1rem;transition:border .2s}
+input:focus,select:focus{outline:none;border-color:var(--p)}
+button{width:100%;padding:.8rem;background:var(--p);color:#fff;border:none;
+       border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;margin-top:1rem;
+       transition:background .2s}
+button:hover{background:var(--d)}
+.result{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 8px 8px 0;
+        padding:1rem;margin-top:1rem;display:none}
 .result.show{display:block}
-.result .big{font-size:2rem;font-weight:800;color:var(--p)}
-.result .lbl{font-size:.8rem;color:var(--s);margin-top:.2rem}
-.result .brk{font-size:.83rem;color:#475569;margin-top:.7rem;
-             background:#fff;padding:.6rem;border-radius:7px}
+.result .big{font-size:1.8rem;font-weight:700;color:var(--p)}
+.result .label{font-size:.8rem;color:var(--s);margin-top:.2rem}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.ads{text-align:center;margin:1.2rem 0}
-.faq-item{border-bottom:1px solid #e2e8f0;padding:.9rem 0}
-.faq-item:last-child{border-bottom:none}
-.faq-q{font-weight:600;color:var(--t);cursor:pointer;font-size:.95rem;
-        display:flex;justify-content:space-between;align-items:center}
-.faq-q::after{content:"＋";color:var(--p)}
-.faq-item.open .faq-q::after{content:"－"}
-.faq-a{display:none;padding-top:.6rem;color:#475569;font-size:.9rem}
-.faq-item.open .faq-a{display:block}
-.tbl{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:.8rem}
-.tbl th{background:#dbeafe;color:var(--d);padding:.5rem .8rem;text-align:left}
-.tbl td{padding:.45rem .8rem;border-bottom:1px solid #e2e8f0}
-.tbl tr:last-child td{border-bottom:none}
-.badge{display:inline-block;background:#dbeafe;color:var(--d);
-       padding:.15rem .5rem;border-radius:4px;font-size:.75rem;
-       font-weight:600;margin-left:.4rem}
-.tip{background:#f0fdf4;border-left:4px solid #22c55e;
-     border-radius:0 8px 8px 0;padding:.9rem 1rem;
-     margin:.8rem 0;font-size:.88rem;color:#166534}
-.warn-box{background:#fefce8;border:1.5px solid #fde68a;
-          border-radius:8px;padding:1rem}
-footer{text-align:center;padding:2.5rem 1rem;color:var(--s);
-       font-size:.8rem;border-top:1px solid #e2e8f0;margin-top:2rem}
-@media(max-width:520px){.row{grid-template-columns:1fr}
-header h1{font-size:1.25rem}}
+.ads{text-align:center;margin:1rem 0}
+footer{text-align:center;padding:2rem 1rem;color:var(--s);font-size:.8rem}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
-  <div style="font-size:.8rem;opacity:.7;margin-bottom:.5rem">🇸🇪 Uppdaterad för skatteår 2026</div>
-  <h1>🧮 Skattekalkylator Frilansare Sverige 2026</h1>
-  <p>Beräkna nettoinkomst som frilansare eller egenföretagare på sekunder.<br>
-  Inkluderar egenavgifter, kommunalskatt och statlig skatt 2026.</p>
+  <h1>🇸🇪 Skattekalkylator Frilansare Sverige 2026</h1>
+  <p>Beräkna nettolön och skatt som frilansare eller egenföretagare i Sverige 2026.</p>
+  <div style="margin-top:.8rem"><a href="#frilans" style="color:#fff;margin:0 .5rem;font-size:.85rem">Frilansare</a><a href="#lon" style="color:#fff;margin:0 .5rem;font-size:.85rem">Nettolön</a><a href="#lan" style="color:#fff;margin:0 .5rem;font-size:.85rem">Bolån</a></div>
 </header>
-<nav class="crumb"><a href="/">Hem</a> › Skattekalkylator › Frilansare Sverige 2026</nav>
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
 <div class="container">
 
-<!-- TOOL 1 : FRILANSARE -->
-<div class="card" id="frilansare-kalkylator">
-  <h2>💼 Frilansare / F-skatt Nettoinkomst 2026 <span class="badge">Uppdaterad</span></h2>
-  <label>Bruttointäkt per år (kr)</label>
-  <input type="number" id="gross_se" placeholder="500000" min="0" inputmode="numeric">
-  <label>Kommunalskatt</label>
-  <select id="kom_se">
-    <option value="32.37">Stockholm (32,37%)</option>
-    <option value="33.10">Göteborg (33,10%)</option>
-    <option value="32.45">Malmö (32,45%)</option>
-    <option value="31.98">Uppsala (31,98%)</option>
-    <option value="32.07">Västerås (32,07%)</option>
-    <option value="32.97">Örebro (32,97%)</option>
-    <option value="32.60" selected>Sverige genomsnitt (32,60%)</option>
-  </select>
-  <div class="tip">
-    💡 <strong>Egenavgifter:</strong> Som frilansare med F-skatt betalar du
-    ca 28,26% av nettovinsten i egenavgifter (pension, sjukförsäkring etc.).
-    Sätt undan <strong>40–45%</strong> av bruttointäkten.
-  </div>
-  <button onclick="calcFrilans()">▶ Beräkna nettoinkomst</button>
-  <div class="result" id="res_frilans">
-    <div class="big" id="netto_se">kr —</div>
-    <div class="lbl">Netto per år (estimat 2026)</div>
-    <div class="brk" id="breakdown_se"></div>
-  </div>
+    <div class="card" id="frilans">
+      <h2>Frilansare / F-skatt Netto Kalkylator 2026</h2>
+      
+<label>Bruttointäkt per år (kr)</label>
+<input type="number" id="gross_se" placeholder="500000" min="0">
+<label>Kommun (kommunalskatt %)</label>
+<select id="kom_se">
+  <option value="32.37">Stockholm (32.37%)</option>
+  <option value="33.10">Göteborg (33.10%)</option>
+  <option value="32.45">Malmö (32.45%)</option>
+  <option value="31.98">Uppsala (31.98%)</option>
+  <option value="32.60">Genomsnitt Sverige (32.60%)</option>
+</select>
+<button onclick="calcFrilans()">Beräkna nettoinkomst</button>
+<div class="result" id="res_frilans">
+  <div class="big" id="netto_se">kr —</div>
+  <div class="label">Netto per år (estimat)</div>
+  <div style="margin-top:.8rem;font-size:.85rem;color:#64748b" id="breakdown_se"></div>
 </div>
-
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-
-<!-- TOOL 2 : NETTOLÖN -->
-<div class="card" id="nettolön-kalkylator">
-  <h2>💰 Nettolön Kalkylator (Anställd)</h2>
-  <div class="row">
-    <div>
-      <label>Bruttolön / månad (kr)</label>
-      <input type="number" id="lon_g" placeholder="45000" min="0">
-    </div>
-    <div>
-      <label>Kommunalskatt (%)</label>
-      <input type="number" id="lon_kom" value="32.60" step="0.01" min="28" max="36">
-    </div>
-  </div>
-  <button onclick="calcLon()">▶ Beräkna nettolön</button>
-  <div class="result" id="res_lon">
-    <div class="big" id="lon_netto">kr —</div>
-    <div class="lbl">Netto per månad (estimat)</div>
-    <div class="brk" id="lon_detail"></div>
-  </div>
-</div>
-
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-
-<!-- TOOL 3 : BOLÅN -->
-<div class="card" id="bolan-kalkylator">
-  <h2>🏠 Bolån Månadsbetalning Kalkylator</h2>
-  <div class="row">
-    <div>
-      <label>Lånebelopp (kr)</label>
-      <input type="number" id="lan_a" placeholder="2500000" min="0">
-    </div>
-    <div>
-      <label>Ränta per år (%)</label>
-      <input type="number" id="lan_r" value="4.9" step="0.1" min="0">
-    </div>
-  </div>
-  <label>Amorteringstid</label>
-  <select id="lan_y">
-    <option value="15">15 år</option>
-    <option value="20">20 år</option>
-    <option value="30" selected>30 år</option>
-    <option value="50">50 år</option>
-  </select>
-  <button onclick="calcLan()">▶ Beräkna månadsbetalning</button>
-  <div class="result" id="res_lan">
-    <div class="big" id="lan_monthly">kr —</div>
-    <div class="lbl">Per månad (annuitetslån)</div>
-    <div class="brk" id="lan_detail"></div>
-  </div>
-</div>
-
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-
-<!-- GUIDE SEO -->
-<div class="card">
-  <h2>📘 Skatt för frilansare i Sverige 2026</h2>
-  <p>Som <strong>frilansare med F-skatt</strong> ansvarar du själv
-  för att betala skatt och avgifter. Det skiljer sig markant från
-  att vara anställd, där arbetsgivaren sköter skatteavdraget.</p>
-  <h3>Skattekomponenter 2026</h3>
-  <table class="tbl">
-    <tr><th>Avgift / Skatt</th><th>Sats 2026</th><th>Bas</th></tr>
-    <tr><td>Egenavgifter</td><td>28,26%</td><td>Nettoresultat</td></tr>
-    <tr><td>Kommunalskatt</td><td>31–34%</td><td>Beskattningsbar inkomst</td></tr>
-    <tr><td>Statlig skatt</td><td>20%</td><td>Över kr 598.500</td></tr>
-    <tr><td>Grundavdrag</td><td>−13.900–42.200 kr</td><td>Automatiskt</td></tr>
-  </table>
-  <h3>Praktiskt exempel — kr 500.000 bruttointäkt (Stockholm)</h3>
-  <table class="tbl">
-    <tr><th>Post</th><th>Belopp</th></tr>
-    <tr><td>Bruttointäkt</td><td>kr 500.000</td></tr>
-    <tr><td>Egenavgifter (28,26%)</td><td>− kr 99.700</td></tr>
-    <tr><td>Inkomst efter avgifter</td><td>kr 400.300</td></tr>
-    <tr><td>Grundavdrag</td><td>− kr 42.200</td></tr>
-    <tr><td>Kommunalskatt Stockholm (32,37%)</td><td>− kr 115.700</td></tr>
-    <tr><td><strong>Nettoinkomst</strong></td><td><strong>≈ kr 284.600 / år</strong></td></tr>
-    <tr><td><strong>Per månad</strong></td><td><strong>≈ kr 23.700</strong></td></tr>
-  </table>
-  <h3>Avdrag du inte bör missa</h3>
-  <ul>
-    <li>Hemmakontor (del av hyra/el proportionellt)</li>
-    <li>Dator, telefon och programvara (100% yrkesmässig)</li>
-    <li>Resor med bil (kr 2,50/km i 2026)</li>
-    <li>Kurser, litteratur och konferenser</li>
-    <li>Pensionssparande (upp till 35% av inkomsten)</li>
-  </ul>
-  <div class="tip" style="margin-top:1rem">
-    ✅ <strong>Tumregel:</strong> Sätt undan <strong>40–45%</strong>
-    av bruttointäkten till skatt och avgifter på ett separat skattekonto.
-  </div>
-</div>
-
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-
-<!-- FAQ -->
-<div class="card">
-  <h2>❓ Vanliga frågor (FAQ)</h2>
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Vad är skillnaden mellan F-skatt och A-skatt?
-    </div>
-    <div class="faq-a">
-      <strong>F-skatt</strong> innebär att du som frilansare betalar
-      din egna skatt via preliminärskatt. Uppdragsgivaren drar ingen skatt.
-      <strong>A-skatt</strong> gäller anställda — arbetsgivaren drar
-      skatten direkt. Som frilansare behöver du F-skatt för att
-      fakturera utan skattekomplicationer.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Ska jag ha enskild firma eller aktiebolag?
-    </div>
-    <div class="faq-a">
-      Vid inkomster under ca <strong>kr 500.000–600.000/år</strong>
-      är enskild firma enklast. Tjänar du mer kan AB ge skattefördelar
-      via lägre bolagsskatt (20,6%) och möjlighet att optimera
-      löne- och utdelningsuttag.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Hur betalar jag preliminärskatt?
-    </div>
-    <div class="faq-a">
-      Du betalar <strong>preliminärskatt</strong> månadsvis baserat
-      på din beräknade inkomst. Du anmäler till Skatteverket via
-      "Preliminär inkomstdeklaration". Vid årets slut görs en
-      avstämning — för lite betald ger restskatt.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="toggleFaq(this)">
-      Måste jag betala moms som frilansare?
-    </div>
-    <div class="faq-a">
-      Om omsättningen överstiger <strong>kr 30.000/år</strong>
-      ska du registrera dig för moms (25% standardsats, 12% livsmedel,
-      6% böcker/transport). Redovisning sker månadsvis, kvartalsvis
-      eller årsvis beroende på omsättning.
-    </div>
-  </div>
-</div>
-
-<div class="card warn-box">
-  <h2 style="color:#92400e">📌 Juridisk ansvarsfriskrivning</h2>
-  <p style="color:#78350f;font-size:.88rem">
-    Denna kalkylator ger en <strong>uppskattning</strong> baserad
-    på svenska skatteregler 2026. Kontakta en redovisningskonsult
-    eller Skatteverket för personlig rådgivning.
-    Senast uppdaterad: 2026-04-27.
-  </p>
-</div>
-
-</div>
-<div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-<footer>
-  <p>© 2026 Skattekalkylator Frilansare Sverige · Gratis verktyg</p>
-  <p style="margin-top:.4rem;font-size:.75rem">
-    Ej avsett som juridisk eller skattemässig rådgivning · 2026-04-27
-  </p>
-  <p style="margin-top:.4rem">
-    <a href="#frilansare-kalkylator" style="color:var(--p);font-size:.8rem">Frilansare</a> ·
-    <a href="#nettolön-kalkylator" style="color:var(--p);font-size:.8rem">Nettolön</a> ·
-    <a href="#bolan-kalkylator" style="color:var(--p);font-size:.8rem">Bolån</a>
-  </p>
-</footer>
-
 <script>
 function calcFrilans(){
-  var g=parseFloat(document.getElementById('gross_se').value)||0;
-  var komR=parseFloat(document.getElementById('kom_se').value)/100;
-  var egenavgR=0.2826;
-  var egenav=g*egenavgR/(1+egenavgR);
-  var ink=g-egenav;
-  var grundav=Math.min(Math.max(13900,ink*0.2),42200);
-  var beskInk=Math.max(ink-grundav,0);
-  var kommunal=beskInk*komR;
-  var statlig=0;
-  if(beskInk>598500)statlig=(beskInk-598500)*0.20;
-  var netto=Math.round(g-egenav-kommunal-statlig);
-  var perc=g>0?Math.round((1-netto/g)*100):0;
-  function f(v){return 'kr '+Math.round(v).toLocaleString('sv-SE');}
+  const g=parseFloat(document.getElementById('gross_se').value)||0;
+  const komR=parseFloat(document.getElementById('kom_se').value)/100;
+  const egenavgR=0.2826;
+  const egenav=g*egenavgR/(1+egenavgR);
+  const ink=g-egenav;
+  const grundav=Math.min(Math.max(13900,ink*0.2),42200);
+  const beskInk=Math.max(ink-grundav,0);
+  const kommunal=beskInk*komR;
+  let statlig=0;
+  if(beskInk>598500) statlig=(beskInk-598500)*0.20;
+  const totalTax=egenav+kommunal+statlig;
+  const netto=Math.round(g-totalTax);
+  const f=v=>'kr '+Math.round(v).toLocaleString('sv-SE');
   document.getElementById('netto_se').textContent='kr '+netto.toLocaleString('sv-SE');
   document.getElementById('breakdown_se').innerHTML=
-    '📊 Egenavgifter: '+f(egenav)+' · Kommunalskatt: '+f(kommunal)+
+    'Egenavgifter: '+f(egenav)+' · Kommunal: '+f(kommunal)+
     (statlig>0?' · Statlig: '+f(statlig):'')+
-    '<br>💰 Per månad: '+f(netto/12)+' · Effektiv sats: '+perc+'%';
+    ' · Per månad: '+f(netto/12);
   document.getElementById('res_frilans').className='result show';
 }
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+    <div class="card" id="lon">
+      <h2>Nettolön Kalkylator (Anställd)</h2>
+      
+<div class="row">
+<div>
+<label>Bruttolön / månad (kr)</label>
+<input type="number" id="lon_g" placeholder="45000" min="0">
+</div>
+<div>
+<label>Ålder</label>
+<input type="number" id="lon_age" value="35" min="16" max="70">
+</div>
+</div>
+<label>Kommunalskatt (%)</label>
+<input type="number" id="lon_kom" value="32.60" step="0.01" min="28" max="36">
+<button onclick="calcLon()">Beräkna nettolön</button>
+<div class="result" id="res_lon">
+  <div class="big" id="lon_netto">kr —</div>
+  <div class="label">Netto per månad</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="lon_detail"></div>
+</div>
+<script>
 function calcLon(){
-  var g=parseFloat(document.getElementById('lon_g').value)||0;
-  var yr=g*12;
-  var komR=parseFloat(document.getElementById('lon_kom').value)/100;
-  var grundav=Math.min(Math.max(13900,yr*0.2),42200);
-  var beskInk=Math.max(yr-grundav,0);
-  var kommunal=beskInk*komR;
-  var statlig=0;
+  const g=parseFloat(document.getElementById('lon_g').value)||0;
+  const yr=g*12;
+  const komR=parseFloat(document.getElementById('lon_kom').value)/100;
+  const grundav=Math.min(Math.max(13900,yr*0.2),42200);
+  const beskInk=Math.max(yr-grundav,0);
+  const kommunal=beskInk*komR;
+  let statlig=0;
   if(beskInk>598500)statlig=(beskInk-598500)*0.20;
-  var netto=Math.round((yr-kommunal-statlig)/12);
-  function f(v){return 'kr '+Math.round(v).toLocaleString('sv-SE');}
+  const netto=Math.round((yr-kommunal-statlig)/12);
+  const f=v=>'kr '+Math.round(v).toLocaleString('sv-SE');
   document.getElementById('lon_netto').textContent='kr '+netto.toLocaleString('sv-SE');
   document.getElementById('lon_detail').innerHTML=
-    'Kommunalskatt: '+f(kommunal/12)+'/mån'+
-    (statlig>0?' · Statlig: '+f(statlig/12)+'/mån':'');
+    'Kommunalskatt: '+f(kommunal/12)+'/mån · Statlig: '+f(statlig/12)+'/mån';
   document.getElementById('res_lon').className='result show';
 }
+</script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+    <div class="card" id="lan">
+      <h2>Bolån Månadsbetalning Kalkylator</h2>
+      
+<div class="row">
+<div>
+<label>Lånebelopp (kr)</label>
+<input type="number" id="lan_a" placeholder="2500000" min="0">
+</div>
+<div>
+<label>Ränta per år (%)</label>
+<input type="number" id="lan_r" value="4.9" step="0.1" min="0">
+</div>
+</div>
+<label>Amorteringstid (år)</label>
+<input type="number" id="lan_y" value="30" min="1" max="50">
+<button onclick="calcLan()">Beräkna månadsbetalning</button>
+<div class="result" id="res_lan">
+  <div class="big" id="lan_monthly">kr —</div>
+  <div class="label">Per månad</div>
+  <div style="margin-top:.5rem;font-size:.85rem;color:#64748b" id="lan_detail"></div>
+</div>
+<script>
 function calcLan(){
-  var p=parseFloat(document.getElementById('lan_a').value)||0;
-  var r=parseFloat(document.getElementById('lan_r').value)/100/12;
-  var n=parseFloat(document.getElementById('lan_y').value)*12;
-  var m=p*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
-  function f(v){return 'kr '+Math.round(v).toLocaleString('sv-SE');}
+  const p=parseFloat(document.getElementById('lan_a').value)||0;
+  const r=parseFloat(document.getElementById('lan_r').value)/100/12;
+  const n=parseFloat(document.getElementById('lan_y').value)*12;
+  const m=p*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+  const f=v=>'kr '+Math.round(v).toLocaleString('sv-SE');
   document.getElementById('lan_monthly').textContent='kr '+Math.round(m).toLocaleString('sv-SE');
   document.getElementById('lan_detail').innerHTML=
-    '🏦 Total ränta: '+f(m*n-p)+' · Totalt: '+f(m*n);
+    'Total ränta: '+f(m*n-p)+' · Totalt: '+f(m*n);
   document.getElementById('res_lan').className='result show';
 }
-function toggleFaq(el){el.parentElement.classList.toggle('open');}
 </script>
+    </div>
+    <div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+  <div class="card" style="background:#eff6ff;border:1.5px solid #bfdbfe">
+    <h2 style="color:#1d4ed8">ℹ️ Over deze calculator</h2>
+    <p style="font-size:.9rem;color:#475569;line-height:1.6">
+      Deze tool geeft een schatting op basis van de regels van 2026.
+      Raadpleeg altijd een belastingadviseur voor definitieve berekeningen.
+      Laatste update: 2026-04-28.
+    </p>
+  </div>
+</div>
+<div class="ads">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5382997898313669"
+data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+<footer>
+  <p>© 2026 Skattekalkylator Frilansare Sverige 2026 · Alle berekeningen zijn indicatief</p>
+  <p style="margin-top:.3rem;font-size:.75rem">
+    Niet bedoeld als juridisch of fiscaal advies
+  </p>
+</footer>
 </body>
 </html>
